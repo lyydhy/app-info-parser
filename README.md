@@ -1,3 +1,6 @@
+### 本仓库 copy至 [app-info-parser](https://github.com/chenquincy/app-info-parser)  在基础上只保留了apk的解析功能 并且支持esm, umd
+
+
 ## app-info-parser
 
 [app-info-parser](https://github.com/chenquincy/app-info-parser) is a parser for parsing `.ipa` or `.apk` files. It will return the information with json from `AndroidManifest.xml` or `Info.plist`.
