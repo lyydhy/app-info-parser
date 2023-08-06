@@ -5,7 +5,7 @@ const commonjs = require('@rollup/plugin-commonjs')
 const {babel} = require('@rollup/plugin-babel');
 const path = require('path')
 const terser = require('@rollup/plugin-terser')
-// const nodePolyfills = require('rollup-plugin-polyfill-node')
+const nodePolyfills = require('rollup-plugin-polyfill-node')
 const buildFormats = [{
   key: 'es',
   dir: 'es'
@@ -21,7 +21,7 @@ async function main()
   const bundle = await rollup({
     input: path.resolve('./', `./lib/index.js`),
     plugins: [
-      // nodePolyfills({}),
+      nodePolyfills({}),
 
 
       commonjs(),
